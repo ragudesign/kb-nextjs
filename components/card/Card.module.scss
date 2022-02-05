@@ -1,0 +1,30 @@
+.card {
+    margin: 1.5rem 0 2.5rem;
+    padding: 3rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 3%) 0px 4px 19px 7px;
+  }
+  
+  .card:hover,
+  .card:focus,
+  .card:active {
+    box-shadow: rgb(0 0 0 / 6%) 0px 4px 19px 7px;
+    h2 {
+      color: $primary;
+    }
+  }
+  
+  .card h2 {
+    margin: 0 0 2rem 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1.8rem;
+  }

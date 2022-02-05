@@ -1,0 +1,25 @@
+{
+  "name": "faq-desk-nextjs",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "graphql": "^16.0.1",
+    "gray-matter": "^4.0.3",
+    "next": "^12.0.10",
+    "nextjs-progressbar": "^0.0.13",
+    "node-fetch": "^2.6.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.3"
+  }
+}

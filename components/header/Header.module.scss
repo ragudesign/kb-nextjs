@@ -1,0 +1,26 @@
+.header > * {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.nav {
+    ul {
+        overflow: auto;
+        margin: 0;
+        li {
+            list-style: none;
+            float: left;
+            padding: 0 1rem;
+            &:hover a {
+                color: $primary;
+            }
+        }
+    }
+}

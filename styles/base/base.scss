@@ -1,0 +1,40 @@
+html {
+  font-size: 50%;
+  scroll-behavior: smooth;
+  min-height: 100%;
+  overflow-x: hidden;
+
+  @include breakpoint(min-old-mobile) {
+    font-size: 55%;
+  }
+
+  @include breakpoint(min-mobile) {
+    font-size: 57.5%;
+  }
+
+  @include breakpoint(min-tablet) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: $primaryFont;
+  color: $baseFontColor;
+  line-height: 1.5;
+  margin: 0;
+  padding-bottom: 8rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5 {
+  line-height: 1.2;
+}

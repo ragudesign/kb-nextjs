@@ -1,0 +1,28 @@
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1040px;
+  margin: 8rem auto 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.searchWrapper {
+  padding: 8rem 2rem;
+  background: #f9fafc;
+  h2 {
+    font-weight: 700;
+    font-size: 4.8rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+}
