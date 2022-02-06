@@ -1,34 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://user-images.githubusercontent.com/21065594/152661449-28ff66fe-9d6c-4d65-9a47-6d6848f232eb.svg" alt="Logo" width="240" height="80">
 
-## Getting Started
+  </a>
 
-First, run the development server:
+  <h3 align="center">WordPress WPGraphQL NextJS App</h3>
 
+  <p align="center">
+    This Next.js app connects to a WordPress WPGraphQL endpoint
+    <br />
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fragudesign%2Ffaq-desk-nextjs&env=WORDPRESS_GRAPHQL_URL)
+    <br />
+    <br />
+    <a href="https://faq-desk-nextjs.vercel.app/" target="_blank">View Demo</a>
+    ·
+    <a href="https://github.com/ragudesign/faq-desk-nextjs/issues/new">Report Bug</a>
+    ·
+    <a href="https://github.com/ragudesign/faq-desk-nextjs/issues/new">Request Feature</a>
+    ·
+    <a href="https://github.com/ragudesign/faq-desk-wp">WordPress Plugin</a>
+  </p>
+</div>
+
+<br>
+<br>
+
+<!-- ABOUT THE PROJECT -->
+## :wave: About The Project
+
+I started this project to learn more about Next.js and how i can use WordPress headless by exposing the data via WPGraphQL plugin. I created a small app which gets the posts from a custom post type and a search that uses a local json file so it's super quick which is generated on build.
+
+![image](https://user-images.githubusercontent.com/21065594/152663399-9eef21df-0e32-4a0e-b7ea-34339d958369.png)
+
+
+
+<!-- GETTING STARTED -->
+## :rocket: Getting Started
+
+### Prerequisites
+
+Setup a WordPress installation and add the following plugins:
+* Install FAQ Desk WP Plugin
+  ```sh
+  https://github.com/ragudesign/faq-desk-wp
+  ```
+  
+* Install WPGraphQL Plugin
+  ```sh
+  https://www.wpgraphql.com/
+  ```
+
+### Installation
+
+1. Clone the repo
 ```bash
-npm run dev
+yarn create next-app -e https://github.com/ragudesign/faq-desk-nextjs
 # or
-yarn dev
+npx create-next-app -e https://github.com/ragudesign/faq-desk-nextjs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Add a .env file to the root with the following:
+```
+WORDPRESS_GRAPHQL_ENDPOINT=http://wordpressite.com/graphql
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Development
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To start the project locally, run:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+yarn dev
+# or
+npm run dev
+```
 
-## Learn More
+<br>
 
-To learn more about Next.js, take a look at the following resources:
+<!-- LICENSE -->
+## :frog: License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Distributed under the MIT License. See `LICENSE` for more information.
