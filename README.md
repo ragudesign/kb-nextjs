@@ -1,10 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://user-images.githubusercontent.com/21065594/152661449-28ff66fe-9d6c-4d65-9a47-6d6848f232eb.svg" alt="Logo" width="240" height="80">
 
-  </a>
+  <img src="https://user-images.githubusercontent.com/21065594/152661449-28ff66fe-9d6c-4d65-9a47-6d6848f232eb.svg" alt="Logo" width="240" height="80">
 
   <h3 align="center">WordPress WPGraphQL NextJS App</h3>
 
