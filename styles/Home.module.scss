@@ -1,28 +1,24 @@
 .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1040px;
-  margin: 8rem auto 0 auto;
-  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin-top: 3rem;
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
-    flex-direction: column;
   }
 }
 
 .searchWrapper {
-  padding: 8rem 2rem;
+  padding: 6rem 0;
   background: #f9fafc;
   h2 {
     font-weight: 700;
-    font-size: 4.8rem;
-    text-align: center;
+    font-size: 3.8rem;
+    text-align: left;
     margin-top: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 0;
   }
 }

@@ -55,7 +55,7 @@ const Search = () => {
                     <ul className={searchStyles.searchResults}>
                         {searchResults.map(({ title, slug }) => (
                             <li key={slug}>
-                                <Link href={`/faq/${slug}`}>
+                                <Link href={`/kb/${slug}`}>
                                     <a>{title}</a>
                                 </Link>
                             </li>

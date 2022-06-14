@@ -1,5 +1,5 @@
 {
-  "name": "faq-desk-nextjs",
+  "name": "kb-nextjs",
   "private": true,
   "scripts": {
     "dev": "next dev",

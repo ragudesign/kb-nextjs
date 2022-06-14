@@ -18,7 +18,7 @@ async function fetcher(query) {
 }
 
 const query = `query getTitleSlugs {
-    faqs {
+    kbs {
       nodes {
         title
         slug
@@ -30,7 +30,7 @@ async function buildJSON() {
 
   const response = await fetcher(query);
 
-  const titleSlugs = response.data.faqs.nodes
+  const titleSlugs = response.data.kbs.nodes
 
   const fullParams = `${JSON.stringify(titleSlugs)}`
 

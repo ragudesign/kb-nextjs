@@ -2,7 +2,7 @@
 <br />
 <div align="center">
 
-  <img src="https://user-images.githubusercontent.com/21065594/152661449-28ff66fe-9d6c-4d65-9a47-6d6848f232eb.svg" alt="Logo" width="240" height="80">
+  <img src="https://user-images.githubusercontent.com/21065594/173569213-b65a585c-9da4-410f-8344-87fe0597472d.svg" alt="Logo" width="240" height="80">
 
   <h3 align="center">WordPress WPGraphQL NextJS App</h3>
 
@@ -10,16 +10,16 @@
     This Next.js app connects to a WordPress WPGraphQL endpoint
     <br />
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fragudesign%2Ffaq-desk-nextjs&env=WORDPRESS_GRAPHQL_URL)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fragudesign%2Fkb-nextjs&env=WORDPRESS_GRAPHQL_URL)
     <br />
     <br />
-    <a href="https://faq-desk-nextjs.vercel.app/" target="_blank">View Demo</a>
+    <a href="https://kb-nextjs.vercel.app/" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/ragudesign/faq-desk-nextjs/issues/new">Report Bug</a>
+    <a href="https://github.com/ragudesign/kb-nextjs/issues/new">Report Bug</a>
     ·
-    <a href="https://github.com/ragudesign/faq-desk-nextjs/issues/new">Request Feature</a>
+    <a href="https://github.com/ragudesign/kb-nextjs/issues/new">Request Feature</a>
     ·
-    <a href="https://github.com/ragudesign/faq-desk-wp">WordPress Plugin</a>
+    <a href="https://github.com/ragudesign/kb-wp">WordPress Plugin</a>
   </p>
 </div>
 
@@ -41,9 +41,9 @@ I started this project to learn more about Next.js and how i can use WordPress h
 ### Prerequisites
 
 Setup a WordPress installation and add the following plugins:
-* Install FAQ Desk WP Plugin
+* Install Knowledge Base WP Plugin
   ```sh
-  https://github.com/ragudesign/faq-desk-wp
+  https://github.com/ragudesign/kb-wp
   ```
   
 * Install WPGraphQL Plugin
@@ -55,9 +55,9 @@ Setup a WordPress installation and add the following plugins:
 
 1. Clone the repo
 ```bash
-yarn create next-app -e https://github.com/ragudesign/faq-desk-nextjs
+yarn create next-app -e https://github.com/ragudesign/kb-nextjs
 # or
-npx create-next-app -e https://github.com/ragudesign/faq-desk-nextjs
+npx create-next-app -e https://github.com/ragudesign/kb-nextjs
 ```
 
 2. Add a .env file to the root with the following:
