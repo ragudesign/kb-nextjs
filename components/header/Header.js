@@ -1,22 +1,7 @@
 import Link from 'next/link';
 import headerStyles from './Header.module.scss';
-import fetcher from '../../lib/fetcher';
-import { getCats } from '../../lib/api';
-import { useEffect, useState } from 'react';
 
-const Header = () => {
-
-  // const [menuItems, setMenuItems] = useState([]);
-
-  // useEffect(async () => {
-  //   const response = await fetcher(getCats);
-
-  //   const kbCats = response.data.kbsTax.nodes;
-
-  //   setMenuItems(kbCats);
-  // }, []);
-
-  // console.log(menuItems, "menuItems")
+const Header = ({menu}) => {
 
   return (
     <div className={headerStyles.header}>
@@ -29,12 +14,9 @@ const Header = () => {
 
         <nav className={headerStyles.nav}>
           <ul>
-            {/* {menuItems.map((item) => {
+            {menu.map((item) => {
               return <li key={item.id}><Link href={'/categories/'+item.slug}>{item.name}</Link></li>;
-            })} */}
-            {/* <li>
-              <Link href="/">Back to home</Link>
-            </li> */}
+            })}
           </ul>
         </nav>
       </div>

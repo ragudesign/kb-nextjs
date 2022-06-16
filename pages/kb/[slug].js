@@ -29,7 +29,7 @@ export default function Kb({ singlePage }) {
 export async function getStaticPaths() {
   const response = await fetcher(getKbSlugs);
 
-  const titleSlugs = response.data.kbs.nodes;
+  const titleSlugs = response.data?.kbs.nodes;
 
   return {
     paths: titleSlugs.map((kb) => `/kb/${kb.slug}`),
@@ -46,7 +46,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      singlePage: response.data.kb,
+      singlePage: response.data?.kb,
     },
   };
 };

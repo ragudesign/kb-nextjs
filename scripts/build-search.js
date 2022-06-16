@@ -30,7 +30,7 @@ async function buildJSON() {
 
   const response = await fetcher(query);
 
-  const titleSlugs = response.data.kbs.nodes
+  const titleSlugs = response.data?.kbs.nodes
 
   const fullParams = `${JSON.stringify(titleSlugs)}`
 

@@ -44,7 +44,7 @@ export default function Home({ latestKbs }) {
 export async function getStaticProps() {
   const response = await fetcher(getLatestKbs);
 
-  const latestKbs = response.data.kbsTax.nodes;
+  const latestKbs = response.data?.kbsTax.nodes;
 
   return {
     props: {

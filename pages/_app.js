@@ -1,31 +1,26 @@
-import Header from '../components/header/Header'
+import Header from '../components/header/Header';
 import NextNprogress from 'nextjs-progressbar';
 import fetcher from '../lib/fetcher';
-import '../styles/base/base.scss'
-import '../styles/base/gutenberg.scss'
+import { getCats } from '../lib/api';
+import '../styles/base/base.scss';
+import '../styles/base/gutenberg.scss';
 
 function MyApp({ Component, pageProps, kbCats }) {
-
   return (
     <>
       <NextNprogress color="#0770ef" />
-      <Header kbCats={kbCats} />
+      <Header menu={kbCats} />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 
-export default MyApp
-
-
-export async function getStaticProps() {
+MyApp.getInitialProps = async () => {
   const response = await fetcher(getCats);
 
-  const kbCats = response.data.kbsTax.nodes;
+  const kbCats = response.data?.kbsTax.nodes;
 
-return {
-  props: {
-    kbCats,
-  },
+  return { kbCats };
 };
-}
+
+export default MyApp;

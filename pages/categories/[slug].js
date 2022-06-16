@@ -32,7 +32,7 @@ export default function categories({ singleCategory }) {
 export async function getStaticPaths() {
   const response = await fetcher(getCats);
 
-  const catSlugs = response.data.kbsTax.nodes;
+  const catSlugs = response.data?.kbsTax.nodes;
 
   return {
     paths: catSlugs.map((cat) => `/categories/${cat.slug}`),
@@ -49,7 +49,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      singleCategory: response.data.kbsTax.nodes[0],
+      singleCategory: response.data?.kbsTax.nodes[0],
     },
   };
 };
