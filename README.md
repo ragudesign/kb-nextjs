@@ -13,8 +13,6 @@
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fragudesign%2Fkb-nextjs&env=WORDPRESS_GRAPHQL_URL)
     <br />
     <br />
-    <a href="https://kb-nextjs.vercel.app/" target="_blank">View Demo</a>
-    ·
     <a href="https://github.com/ragudesign/kb-nextjs/issues/new">Report Bug</a>
     ·
     <a href="https://github.com/ragudesign/kb-nextjs/issues/new">Request Feature</a>
@@ -31,7 +29,7 @@
 
 I started this project to learn more about Next.js and how i can use WordPress headless by exposing the data via WPGraphQL plugin. I created a small app which gets the posts from a custom post type and a search that uses a local json file so it's super quick which is generated on build.
 
-![image](https://user-images.githubusercontent.com/21065594/152663399-9eef21df-0e32-4a0e-b7ea-34339d958369.png)
+![image](https://user-images.githubusercontent.com/21065594/174101146-f50138a3-0009-4941-b907-017941f28b4f.png)
 
 
 
