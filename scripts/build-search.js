@@ -2,7 +2,7 @@ const fetch = require('node-fetch')
 const fs = require('fs')
 require('dotenv').config()
 
-const WP_API = process.env.NEXT_PUBLIC_WORDPRESS_GRAPHQL_URL
+const WP_API = process.env.WORDPRESS_GRAPHQL_URL
 
 async function fetcher(query) {
 
