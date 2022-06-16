@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import fetcher from '../../lib/fetcher';
-import { getSlugs, getKbSlug } from '../../lib/api';
+import { getKbSlugs, getKbSlug } from '../../lib/api';
 import kbStyles from '../../styles/Kb.module.scss';
 
 export default function Kb({ singlePage }) {
@@ -13,6 +13,7 @@ export default function Kb({ singlePage }) {
       <div className={kbStyles.title}>
         <div className="wrapper">
           <h2>{singlePage.title}</h2>
+          <p>{singlePage.kbsTax.nodes[0].name}</p>
         </div>
       </div>
 
@@ -26,7 +27,7 @@ export default function Kb({ singlePage }) {
 }
 
 export async function getStaticPaths() {
-  const response = await fetcher(getSlugs);
+  const response = await fetcher(getKbSlugs);
 
   const titleSlugs = response.data.kbs.nodes;
 

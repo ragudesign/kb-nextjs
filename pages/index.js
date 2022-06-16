@@ -24,8 +24,15 @@ export default function Home({ latestKbs }) {
 
         <div className="wrapper">
           <div className={styles.grid}>
-            {latestKbs.map((kb) => {
-              return <Card link={'/kb/' + kb.slug} key={kb.id} title={kb.title} excerpt={kb.excerpt} />;
+            {latestKbs.map((kbcat, index) => {
+              return (
+                <div key={index}>
+                  <h3>{kbcat.name}</h3>
+                  {kbcat.kbs.nodes.map((kb) => {
+                    return <Card link={'/kb/' + kb.slug} key={kb.id} title={kb.title} />;
+                  })}
+                </div>
+              );
             })}
           </div>
         </div>
@@ -37,7 +44,7 @@ export default function Home({ latestKbs }) {
 export async function getStaticProps() {
   const response = await fetcher(getLatestKbs);
 
-  const latestKbs = response.data.kbs.nodes;
+  const latestKbs = response.data.kbsTax.nodes;
 
   return {
     props: {
