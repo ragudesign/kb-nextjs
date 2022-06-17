@@ -32,9 +32,9 @@ async function buildJSON() {
 
   const titleSlugs = response.data?.kbs.nodes
 
-  const fullParams = `${JSON.stringify(titleSlugs)}`
+  const fullParams = `export const searchArray = ${JSON.stringify(titleSlugs)}`
 
-  fs.writeFile(process.cwd() + '/public/search.json', fullParams, function (err) {
+  fs.writeFile(process.cwd() + '/lib/search-array.js', fullParams, function (err) {
     if (err) return console.log(err);
   })
 }
