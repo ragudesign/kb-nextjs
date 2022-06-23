@@ -18,7 +18,7 @@ async function fetcher(query) {
 }
 
 const query = `query getTitleSlugs {
-    kbs {
+    kbs(first:1000) {
       nodes {
         title
         slug
